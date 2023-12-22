@@ -1,0 +1,200 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+.firstDiv {
+    border-radius: 10px;
+    width: 100svw;
+    background-color: #F5F5F5;
+    padding: 0 10%;
+    margin: 5% 0 0 5%;
+}
+
+.firstDiv > p {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 5% 0;
+}
+
+.firstDiv > div { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.firstDiv > div > div {
+    width: 30%;
+    background-color: #fff;
+    margin-bottom: 5%;
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.firstDiv > div > div > div {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.firstDiv > div > div > div > img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.firstDiv > div > div > h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 5% 0;
+}
+
+.firstDiv > div > div > p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 5% 0;
+}
+
+.firstDiv > div > div > div > div {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.firstDiv > div > div > div > div > ion-icon {
+    font-size: 1.2rem;
+    color: #FFB900;
+}
+
+.firstDiv > p:last-child {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 5% 0;
+    cursor: pointer;
+}
+
+.lastDiv {
+    border-radius: 10px;
+    height: fit-content;
+    background-color: #F5F5F5;
+    padding: 2%;
+    display: grid;
+    margin: 5%
+}
+
+.lastDiv > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 5% 0;
+}
+
+.lastDiv > div:first-child > p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.lastDiv > div:first-child > ion-icon {
+    font-size: 2rem;
+    color: #FFB900;
+}
+
+.lastDiv > div:last-child {
+    justify-content: center;
+}
+
+.lastDiv > div:last-child > div {
+    background-color: #fff;
+    margin-bottom: 5%;
+    padding: 2%;
+    border-radius: 20px;
+    display: flex;
+    /*ombre vers le bas */
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    padding: 2%;
+
+
+}
+
+.lastDiv > div:last-child > div > div {
+    border-radius: 5px;
+}
+
+.lastDiv > div:last-child > div > div > img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 5px;
+    border-radius: 10px 0 0 10px;
+}
+
+.lastDiv > div:last-child > div > h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 5% 0;
+}
+
+.lastDiv > div:last-child > div > p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 5% 0;
+}
+
+.lastDiv > div:last-child > div > div > div {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.lastDiv > div:last-child > div > div > div > ion-icon {
+    font-size: 1.2rem;
+    color: #FFB900;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .firstDiv > div > div {
+        width: 45%;
+    }
+    
+    .lastDiv > div:first-child > p {
+        font-size: 1.5rem;
+    }
+
+    .firstDiv > p {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        display: block;
+    }
+
+    .lastDiv > div {
+        display: grid;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .firstDiv > div > div {
+        width: 100%;
+    }
+
+    .lastDiv > div:last-child > div > div > div > div {
+        width: 100%;
+    }
+}
